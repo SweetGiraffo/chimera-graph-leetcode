@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #e2e8f0;
+    background-color: #0b0f17;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+  }
+}
+
+/* Custom scrollbars for dark LeetCode-like experience */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+/* Strictly hide duplicate MathML output from KaTeX */
+.katex-mathml {
+  display: none !important;
+}
+
+/* KaTeX custom styling for crisp mathematical symbols */
+.katex {
+  font-size: 1.05em;
+  color: #7dd3fc !important;
+  line-height: 1.2;
+  text-rendering: auto;
+}
+
+.katex-display {
+  margin: 0.25rem 0 !important;
+  color: #e0f2fe !important;
+}
+
+.katex-display-container {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.katex-inline-wrapper {
+  display: inline-block;
+  padding: 0 0.15rem;
+  vertical-align: baseline;
+}
